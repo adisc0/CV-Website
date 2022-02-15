@@ -1,0 +1,248 @@
+*{
+    border: 0;
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.col-md-6{
+    width: 100%;
+    padding: 0%;
+}
+
+
+@font-face{
+    font-family: 'TitilliumWebBold';
+    src: url(fonts/TitilliumWeb-Bold.ttf);
+    font-style: normal;
+}
+
+.container-fluid1{
+    background-color:#141414;
+    padding: 0%;
+ 
+}
+
+.row {
+    margin-right: 0px;
+    }
+
+
+.alken{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin-right: 0px;
+    image-rendering: auto;
+    
+}
+
+.Name{
+    color: White;
+    font-family: TitilliumWebBold;
+    font-weight: 100%;
+    font-size: 140%; 
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.container-fluid2{
+    font-family: TitilliumWeb_Bold;
+}
+
+
+.accordion {
+    background-color: #eee;
+    font-family: TitilliumWebBold;
+    color: #444;
+    cursor: pointer;
+    padding: 22px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #141414;
+    color: #eee;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: rgb(129, 121, 121);
+    font-weight: bold;
+    float: right;
+    margin-left: 2px;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: #eee;
+  }
+  
+  .panel {
+    padding: 0px 18px;
+    background-color: white;
+    font-family: TitilliumWebBold;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+  .personal-info{
+     
+      padding: 20px;
+      text-align: justify;
+      font-family: TitilliumWebBold;
+  }
+
+.timeline-area{
+    margin: 90px auto;
+    width: 360px;
+    border-left: 2px solid #ccc;
+    padding:0 20px 0 30px;
+    font-family: TitilliumWebBold;
+}
+
+
+.schools{
+    background-color: #eee;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    line-height: 1.7;
+    position: relative;
+    height: 110px;
+    margin-bottom: 20px;
+
+}
+
+.schools::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+
+.schools::after{
+    content: '';
+    width:0;
+    height: 0;
+    border-style: none;
+    border-color: transparent #ddd transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+
+.schools h2{
+    margin: 0;
+    text-transform: capitalize;
+    font-family: TitilliumWebBold;
+}
+
+.school h3{
+    margin: 0;
+    font-family: TitilliumWebBold;
+
+}
+
+.school h5{
+    margin: 0;
+    font-family: TitilliumWebBold;
+
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  .containerLang {
+    width: 100%;
+    background-color: #ddd;
+   
+  }
+  
+  .skills {
+    font-family: TitilliumWebBold;
+    text-align: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+  }
+  
+  .java {width: 55%; background-color: #4CAF50;}
+  .html {width: 65%; background-color: #2196F3;}
+  .css {width: 65%; background-color: #f44336;}
+  .js {width: 35%; background-color: #808080;}
+
+  ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+  }
+  
+  ul li {
+    border: 1px solid #ddd;
+    margin-top: 1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+  }
+
+  .panel .personal-info .row .col ul{
+    border: 0px solid #ddd;
+    margin-top: 0px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 0px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    padding: 5%;
+    border: 1px solid #ddd;
+     
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dimacale - CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="css.css">
+<script src="script.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container-fluid1">
+        <div class="row align-items-center">
+           <div class="col-md-6">
+              <img class="alken" class="img-rounded" src= "img/profilepic.jpg"  alt="Alken Dimacale">
+             </div>
+            <div class="col-md-6">
+                <div class="Name">
+                  <h1>Alken Reyvin G. Dimacale</h1>
+                  <p>4th Year Computer Science Student</p>
+                  <p>University of Santo Tomas</p>
+                  <h6>Major in Core Computer Science</h6>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+<button class="accordion">Personal Information</button>
+<div class="panel">
+    <div class="personal-info">
+      <div class="row">
+        <div class="col">
+          <h2>Given name:</h2>
+          <p>Alken Reyvin</p>
+          <br>
+          <h2>Middle name:</h2>
+          <p>Ganiban</p>
+          <br>
+          <h2>Surname:</h2>
+          <p>Dimacale</p>
+          <br>
+          <h2>Place of Birth:</h2>
+          <p><strong><a href="https://earth.google.com/web/@-6.37624944,150.40144568,-8.94609601a,2957262.02700633d,35y,0h,0t,0r/data=ChAaDgoIL20vMDVxa3AYAiAB" target="_blank">Port Moresby, Papua new Guinea</a></strong></p>
+          
+        </div>
+        <div class="col">
+          <h2>Age:</h2>
+          <div id="Age"></div>
+          <br>
+          <h2>Contact Number:</h2>
+            <p>Globe: 0926 005 5448</p>
+          <br>
+          <h2>Email:</h2>
+          <p>alken9dimacale@gmail.com</p>
+          <br><h2>LinkedIn</h2>
+          <p><a href="https://www.linkedin.com/in/alken-reyvin-dimacale-02a06721b/" target="_blank">@Alken Reyvin Dimacale</a></p>
+          <br>
+        </div>
+      </div>
+      <h2>About me: </h2>
+      <p>I am a highly motivated and optimistic individual, possessing a strong work ethic and commitment to efficiency and process. With my knowledge and skills, I aim to use them to the best of my ability in order to contribute to the workforce.</p>
+    </div>
+</div>
+
+
+<button class="accordion">Academic Information</button>
+  <div class="panel">
+
+     <section class="timeline-area">
+       <div class="schools">
+          <h4>TERTIARY EDUCATION</h4>
+          <h5><a href="https://ofad.ust.edu.ph/" target="_blank">University of Santo Tomas</a></h5>
+          <h5>Core Computer Science</h5>
+          <h5>2018-Present</h5>
+       </div>
+       <div class="schools">
+          <h4>SECONDARY EDUCATION</h4>
+          <h5><a href="http://www.pmis.iea.ac.pg/" target="_blank">Port Moresby International School</a></h5>
+          <h5>IGCSE/ACT</h5>
+          <h5>2012-2017</h5>
+        </div>
+        <div class="schools">
+          <h4>PRIMARY EDUCATION</h4>
+          <h5><a href="https://www.stjosephsinternational.ac.pg/" target="_blank">St. Joseph's International Catholic College</a></h5>
+          <h5>2006-2011</h5>
+        </div>
+        
+     </section>
+
+  </div>
+
+<button class="accordion">Professional Information</button>
+<div class="panel">
+    <h1>Programming Experience</h1>
+    <h2>Languages</h2>
+    
+    <p>JAVA</p>
+    <div class="containerLang">
+      <div class="skills java">55%</div>
+    </div>
+    
+    <p>HTML</p>
+    <div class="containerLang">
+      <div class="skills html">65%</div>
+    </div>
+    
+    <p>CSS</p>
+    <div class="containerLang">
+      <div class="skills css">65%</div>
+    </div>
+    
+    <p>JavaScript</p>
+    <div class="containerLang">
+      <div class="skills js">35%</div>
+    </div>
+    <br>
+    
+</div>
+
+<button class="accordion">Skills</button>
+<div class="panel">
+    <ul>
+      <div class="row">
+      <div class="col">
+        <li>Fluent in English and Pidgin (Papua New Guinea Tok Pisin)</li>
+        <li>Extensive experience with Microsoft Office applications</li>
+        <li>Active listener</li>
+        <li>Communication skills</li> 
+      </div>
+      <div class="col">
+        <li>Flexibility</li>
+        <li>Teamwork and collaboration</li>
+        <li>Work ethic</li>
+        <li>Time management</li>
+      </div>
+    </div></ul>
+</div>
+
+<button class="accordion">Experience</button>
+<div class="panel">
+  <div class="personal-info">
+    <div class="row">
+      <div class="col">
+        <h2>Greenstove: Inventory</h2>
+        <p>Software Engineering Project (Aug 2020 - May 2021)</p>
+        <ul>
+          <li>Quality Assurance Manager</li>
+        </ul>
+        <br>
+      </div>
+
+      <div class="col">
+        <h2>Filipino Sign Language Recognition using OpenPose with Long-Short term Memory</h2>
+        <p>Undergraduate Thesis (Jan 2021 - Dec 2021)</p>
+        <ul>
+          <li>Research/Data Gathering/Write up</li>
+        </ul>
+        <br>
+      </div>
+    </div>
+   </div>
+</div>
+
+
+<script>
+function getAge(DOB) {
+    var today = new Date();
+    var birthDate = new Date(DOB);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age = age - 1;
+    }
+
+    return age + " years old";
+}
+    document.getElementById("Age").innerHTML = getAge("02/09/2000");
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
